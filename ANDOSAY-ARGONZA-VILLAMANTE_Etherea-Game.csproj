@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B55682D9-768C-4070-90B3-D45CFAACCBB1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ANDOSAY_ARGONZA_VILLAMANTE_Etherea_Game</RootNamespace>
+    <AssemblyName>ANDOSAY-ARGONZA-VILLAMANTE_Etherea-Game</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnemyCharacters.cs" />
+    <Compile Include="GameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeaderBoards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiaCharacter.cs" />
+    <Compile Include="MusicPlayer.cs" />
+    <Compile Include="NameInput.cs" />
+    <Compile Include="NpcCharacters.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RunningTimer.cs" />
+    <Compile Include="StagePlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoryLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LeaderBoards.resx">
+      <DependentUpon>LeaderBoards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StagePlay.resx">
+      <DependentUpon>StagePlay.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotJamOldStyle11.ttf" />
+    <None Include="Resources\play_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start_Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bg1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bg2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bg3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bg4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bg5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bg6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bg7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bg8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bg9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoryLine_BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skullwolf_hurt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skullwolf_idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skullwolf_atk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skullwolf_death.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprout_hurt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprout_idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprout_death.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mia_leftrun.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mia_rightdagger.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mia_rightidle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mia_rightrun.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mia_leftdagger.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mia_leftidle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mia_righthurt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mia_lefthurt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stage1_BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprout_atk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprout_move.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skullwolf_move.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mia_rightbow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mia_leftbow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbtn_lboards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lboards_BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardian_move.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardian_idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardian_atk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardian_death.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardian_hurt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_talk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instruction_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lboard_button.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etherea_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cartoon_Forest_BG_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialogueBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storyLine_finished.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finishedBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game_completed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkfinishedBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f303bd4ef7a33170b8facce483523e84.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
